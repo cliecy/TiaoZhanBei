@@ -1,0 +1,6 @@
+  <van-tabbar active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item  icon="home-o">首页</van-tabbar-item>
+    <van-tabbar-item  icon="search">位置显示</van-tabbar-item>
+    <van-tabbar-item  icon="friends-o">姿态检测</van-tabbar-item>
+    <van-tabbar-item  icon="setting-o">设置</van-tabbar-item>
+  </van-tabbar>

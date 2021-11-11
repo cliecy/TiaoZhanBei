@@ -1,0 +1,4 @@
+<view>
+active现在等于{{active}}
+我是设置页
+</view>

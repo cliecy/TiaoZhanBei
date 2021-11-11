@@ -1,0 +1,5 @@
+<div class='container'>
+    <van-image width="700rpx" height="700rpx" round="true" src="https://tse1-mm.cn.bing.net/th/id/R-C.21ec10993090876a2ce564eca4852ad3?rik=zZoYN7Gi4nnxpA&riu=http%3a%2f%2fpic43.nipic.com%2f20140609%2f6608733_133927583000_2.jpg&ehk=eW%2bzRdIA7IZidnKwNF2I5MKkLAw9jmfjWiKYt8Ee2Xo%3d&risl=&pid=ImgRaw&r=0" />
+</div>
+
+<van-dialog id="van-dialog" />
