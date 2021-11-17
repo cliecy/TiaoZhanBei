@@ -24,8 +24,20 @@ button:focus{
 button::after{
   border: none;
 }
-
-
+.BigFont {
+  /*字体设置*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*方正舒体*/
+  font-size: 35px;
+  text-align: center;/*字体位置*/
+  color: black;
+}
+.SmallFont {
+  /*字体设置*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*方正舒体*/
+  font-size: 15px;
+  text-align: center;/*字体位置*/
+  color: black;
+}
 page {
   background: #f6f6f6;
   display: flex;

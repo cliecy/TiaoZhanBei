@@ -1,11 +1,12 @@
-// pages/Setting/Setting.js
+// pages/Position/Position.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        active: null
+        version: "v1.2",
+        isAdmin: true
     },
 
     /**
@@ -13,9 +14,16 @@ Page({
      */
     onLoad: function (options) {
         this.getTabBar().setData({
-            active : 3
+            active : 3 
           })
 
+    } ,
+    ComeBack:function(){
+        console.log("Hello");
+    },
+
+    SendMessage:function(){
+        console.log("Hello");
     },
 
     /**

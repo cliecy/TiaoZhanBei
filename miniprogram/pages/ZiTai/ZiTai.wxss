@@ -1,1 +1,6 @@
 /* pages/ZiTai/ZiTai.wxss */
+page{
+    /* background: linear-gradient(red, orange, yellow);  */
+    /* background-color: linear-gradient(blue, indigo, violet); */
+    background-image: url(https://bpic.588ku.com/back_origin_min_pic/19/04/12/0b1434c2c8d64c5c141bf0af5a4cfa50.jpg);
+}

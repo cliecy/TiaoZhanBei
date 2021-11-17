@@ -8,8 +8,8 @@ Page({
         active : null,
         markers : null,
         polyline: null,
-        longitude: 110,
-        latitude: 60
+        latitude: 23.099994,
+        longitude: 113.324520
     },
 
     /**
@@ -20,12 +20,7 @@ Page({
             active : 1 
           })
 
-    },
-    
-    regionchange:function(e){
-
-    }
-    ,
+    } ,
     ComeBack:function(){
         console.log("Hello");
     },
