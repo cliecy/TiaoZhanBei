@@ -1,4 +1,18 @@
-<view>
-active现在等于{{active}}
-我是姿态页
+<div class='container'>
+    <text class="BigFont" style="white-space: pre-wrap;">
+    姿态展示：
+    </text>
+    <van-image width="600rpx" height="600rpx" src="http://82.157.165.36/MicroProgramSource/%E8%B5%B0%E8%B7%AF.png" />
+</div>
+<view style="white-space:pre-wrap" class="Xcontainer" >
+<text class="SmallFont">
+
+
+
+
+
+使用者正在{{state}}
+</text>
 </view>
+
+

@@ -29,14 +29,14 @@ button::after{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*方正舒体*/
   font-size: 35px;
   text-align: center;/*字体位置*/
-  color: black;
+  color: #555;
 }
 .SmallFont {
   /*字体设置*/
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*方正舒体*/
   font-size: 15px;
   text-align: center;/*字体位置*/
-  color: black;
+  color: #555;
 }
 page {
   background: #f6f6f6;

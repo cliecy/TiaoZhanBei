@@ -1,6 +1,7 @@
 /* pages/Index/Index.wxss */
 page{
-    background: linear-gradient(red, orange, yellow); 
+    /* background: #F6F6F6; */
+    /* background: linear-gradient(red, orange, yellow);  */
     /* background: linear-gradient(blue, indigo, violet); */
     /* background-image: url(https://www.manpingou.com/uploads/allimg/170418/25-1F41QF9344Q.jpg); */
 }
