@@ -3,10 +3,10 @@
 </div>
 <text class="BigFont">欢迎使用!</text>
 <view style="white-space:pre-wrap" class="Xcontainer" >
-<text class="SmallFont">
+<text class="SmallFont" wx:if="{{WhetherBangding}}">
 
 监护者：{{NameA}}
-使用者: {{NameB}}
+使用者：{{NameB}}
 
 
 
@@ -14,9 +14,9 @@
 </text>
 </view>
 
-<view class="container" wx:if="{{WhetherBangding==false}}">
+<view class="container" wx:if="{{!WhetherBangding}}">
     <text class="SmallFont">您还未绑定使用者，请绑定!</text>
-     <van-button round type="warning" bind:click="SendMessage">发出震动</van-button>
+     <van-button round type="warning" bind:click="SendMessage">立即绑定</van-button>
 </view>
 
 

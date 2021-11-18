@@ -1,12 +1,17 @@
 // pages/ZiTai/ZiTai.js
+var app = getApp();
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+        WhetherBangding: true,
         active: null,
-        state: "行走"
+        state: "行走",
+        ClassA: true,
+        ClassB: false,
+        ClassC: false
     },
 
     /**
@@ -29,9 +34,7 @@ Page({
     /**
      * 生命周期函数--监听页面显示
      */
-    onShow: function () {
 
-    },
 
     /**
      * 生命周期函数--监听页面隐藏

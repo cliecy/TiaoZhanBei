@@ -2,16 +2,24 @@
     <text class="BigFont" style="white-space: pre-wrap;">
     姿态展示：
     </text>
-    <van-image width="600rpx" height="600rpx" src="http://82.157.165.36/MicroProgramSource/%E8%B5%B0%E8%B7%AF.png" />
+    <van-image width="300rpx" height="300rpx" src="http://82.157.165.36/MicroProgramSource/%E8%B5%B0%E8%B7%AF.png" wx:if="{{ClassA&&WhetherBangding}}"/>
+    <van-image width="300rpx" height="300rpx" src="http://82.157.165.36/MicroProgramSource/%E6%AD%A5%E8%A1%8C.png" wx:if="{{ClassB&&WhetherBangding}}"/>
+    <van-image width="300rpx" height="300rpx" src="http://82.157.165.36/MicroProgramSource/%E8%BA%BA%E5%A7%BF%E8%AF%86%E5%88%AB.png" wx:if="{{ClassC&&WhetherBangding}}"/>
 </div>
 <view style="white-space:pre-wrap" class="Xcontainer" >
-<text class="SmallFont">
-
+<text class="SmallFont" wx:if="{{WhetherBangding}}">
 
 
 
 
 使用者正在{{state}}
+</text>
+<text wx:else>
+
+
+
+
+未获取到数据，请绑定
 </text>
 </view>
 

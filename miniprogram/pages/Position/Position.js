@@ -9,7 +9,8 @@ Page({
         markers : null,
         polyline: null,
         latitude: 23.099994,
-        longitude: 113.324520
+        longitude: 113.324520,
+        WhetherBangding: true
     },
 
     /**
