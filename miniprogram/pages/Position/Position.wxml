@@ -1,10 +1,11 @@
 <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" controls="{{controls}}" 
      bindcontroltap="controltap" markers="{{markers}}" 
-     bindmarkertap="markertap" polyline="{{polyline}}" show-location="true"  
-     show-location style="width: 100%; height: 1200rpx;" subkey="3SDBZ-WU46W-3MXR6-RECYC-3DKBV-U5FJX" enable-3D="true" enable-rotate="true" skew="20"></map>
+     bindmarkertap="markertap" polyline="{{polyline}}" 
+     style="width: 100%; height: 1200rpx;" 
+     subkey="3SDBZ-WU46W-3MXR6-RECYC-3DKBV-U5FJX" enable-3D="true" enable-rotate="true" skew="20"></map>
 
 <view class="Xcontainer" wx:if="{{WhetherBangding}}">
-     <van-button round type="info" bind:click="ComeBack">复位</van-button>
+     <!-- <van-button round type="info" bind:click="ComeBack">复位</van-button> -->
      <van-button round type="warning" bind:click="ToTarget">导航到目标</van-button>
      <van-button round type="danger" bind:click="SendMessage">发出震动</van-button>
 </view>

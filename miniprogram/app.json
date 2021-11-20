@@ -26,6 +26,11 @@
         "van-cell": "@vant/weapp/cell/index",
         "van-cell-group": "@vant/weapp/cell-group/index"
     },
+    "permission":{
+      "scope.userLocation": {
+      "desc": "获取位置" 
+      }
+      },
     "tabBar": {
         "custom": true,
         "list": [

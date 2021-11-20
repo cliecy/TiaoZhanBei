@@ -8,13 +8,16 @@ Page({
         active : null,
         markers : null,
         polyline: null,
-        latitude: 37.529533,
-        longitude: 122.055729,
+        latitude: 37.529600,
+        longitude: 122.055900,
         WhetherBangding: true
     },
 
     ToTarget:function(){
-
+        wx.openLocation({
+            latitude: this.data.markers[0].latitude,//要去的纬度-地址
+            longitude: this.data.markers[0].longitude,//要去的经度-地址
+            })
     },
 
     /**
@@ -31,8 +34,8 @@ Page({
         latitude: this.data.markers[0].latitude,
         longitude: this.data.markers[0].longitude
         })
-        let mpCtx = wx.createMapContext("map");
-        mpCtx.moveToLocation();
+        // let mpCtx = wx.createMapContext("map");
+        // mpCtx.moveToLocation();
     },
 
     SendMessage:function(){
@@ -46,8 +49,8 @@ Page({
         this.setData({
             markers:[{
                 id: 0,
-                latitude: 37.529533,
-                longitude: 122.055729 }]
+                latitude: 37.529600,
+                longitude: 122.055900 }]
         })
 
     },
