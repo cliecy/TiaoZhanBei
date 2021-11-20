@@ -6,6 +6,7 @@ Page({
      * 页面的初始数据
      */
     data: {
+        WhetherShuaiDao: false,
         WhetherBangding: true,
         active: null,
         state: "行走",
@@ -34,6 +35,9 @@ Page({
     /**
      * 生命周期函数--监听页面显示
      */
+    onShow: function(){
+        this.WhetherShuaiDao=app.WhetherShuaiDao
+    },
 
 
     /**

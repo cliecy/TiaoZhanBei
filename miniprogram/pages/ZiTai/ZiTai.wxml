@@ -23,4 +23,11 @@
 </text>
 </view>
 
+<div style="color: red; text-align: center; white-space: pre-wrap; font-size:30px;" wx:if="{{WhetherShuaiDao}}">
+
+
+
+请注意，老人已摔倒！
+</div>
+
 

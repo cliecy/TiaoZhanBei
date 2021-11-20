@@ -3,7 +3,8 @@ import Dialog from '@vant/weapp/dialog/dialog';
 App({
   globalData: {
     openid:null,
-    WhetherBangding: true
+    WhetherBangding: true,
+    WhetherShuaiDao: false
   },
   onLaunch: function () {
     if (!wx.cloud) {

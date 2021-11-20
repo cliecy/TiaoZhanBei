@@ -26,14 +26,14 @@ button::after{
 }
 .BigFont {
   /*字体设置*/
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*方正舒体*/
+  font-family: 'Segoe UI';/*方正舒体*/
   font-size: 35px;
   text-align: center;/*字体位置*/
   color: #555;
 }
 .SmallFont {
   /*字体设置*/
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*方正舒体*/
+  font-family: 'Segoe UI';/*方正舒体*/
   font-size: 15px;
   text-align: center;/*字体位置*/
   color: #555;
