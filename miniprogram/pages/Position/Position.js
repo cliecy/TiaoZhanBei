@@ -8,9 +8,13 @@ Page({
         active : null,
         markers : null,
         polyline: null,
-        latitude: 34.796491,
-        longitude: 113.665299,
+        latitude: 37.529533,
+        longitude: 122.055729,
         WhetherBangding: true
+    },
+
+    ToTarget:function(){
+
     },
 
     /**
@@ -20,10 +24,15 @@ Page({
         this.getTabBar().setData({
             active : 1 
           })
-
     } ,
     ComeBack:function(){
-        console.log("Hello");
+        console.log("ComeBack");
+        this.setData({
+        latitude: this.data.markers[0].latitude,
+        longitude: this.data.markers[0].longitude
+        })
+        let mpCtx = wx.createMapContext("map");
+        mpCtx.moveToLocation();
     },
 
     SendMessage:function(){
@@ -37,8 +46,8 @@ Page({
         this.setData({
             markers:[{
                 id: 0,
-                latitude: 34.796491,
-                longitude: 113.665299 }]
+                latitude: 37.529533,
+                longitude: 122.055729 }]
         })
 
     },

@@ -26,8 +26,8 @@
 <div style="color: red; text-align: center; white-space: pre-wrap; font-size:30px;" wx:if="{{WhetherShuaiDao}}">
 
 
-
-请注意，老人已摔倒！
+请注意，使用者已跌倒！
+<van-button round type="info" bind:click="GoToPosition">查看位置</van-button>
 </div>
 
 

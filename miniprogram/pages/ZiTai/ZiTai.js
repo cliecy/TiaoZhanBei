@@ -14,7 +14,14 @@ Page({
         ClassB: false,
         ClassC: false
     },
-
+    GoToPosition:function(){
+        wx.switchTab({
+          url: '/pages/Position/Position',
+          success: (res) => {},
+          fail: (res) => {},
+          complete: (res) => {},
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
@@ -39,6 +46,33 @@ Page({
         this.setData({
             WhetherShuaiDao:app.globalData.WhetherShuaiDao
         })
+        var temp=app.globalData.ZiTaiCase;
+        switch(temp){
+            case 1:
+                this.setData({
+                    ClassA: true,
+                    ClassB: false,
+                    ClassC: false,
+                    state: "行走"
+                })
+                break;
+            case 2:
+                this.setData({
+                    ClassA: false,
+                    ClassB: true,
+                    ClassC: false,
+                    state: "奔跑"
+                })
+                break;
+            case 3:
+                this.setData({
+                    ClassA: false,
+                    ClassB: false,
+                    ClassC: true,
+                    state: "平躺"
+                })
+                break;
+        }
     },
 
 

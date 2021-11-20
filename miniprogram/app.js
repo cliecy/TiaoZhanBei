@@ -4,7 +4,8 @@ App({
   globalData: {
     openid:null,
     WhetherBangding: true,
-    WhetherShuaiDao: false
+    WhetherShuaiDao: false,
+    ZiTaiCase:1
   },
   onLaunch: function () {
     if (!wx.cloud) {
@@ -39,17 +40,22 @@ App({
   },
   GetNews:function(){
     Dialog.confirm({
-      title: '老人跌倒',
-      message: '腰带检测到老人跌倒！',
+      title: '跌倒',
+      message: '腰带检测到使用者跌倒！',
     })
       .then(() => {
         wx.switchTab({
-          url: '/pages/Position/Position',
+          url: '/pages/ZiTai/ZiTai',
         })
+        this.globalData.WhetherShuaiDao=true;
+        this.globalData.ZiTaiCase=3;
       })
       .catch(() => {
         console.log("老人跌倒，但是使用者无视");
+        this.globalData.WhetherShuaiDao=true;
+        this.globalData.ZiTaiCase=3;
       });
+
   }
 
 
