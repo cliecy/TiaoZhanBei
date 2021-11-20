@@ -8,8 +8,8 @@ Page({
         active : null,
         markers : null,
         polyline: null,
-        latitude: 23.099994,
-        longitude: 113.324520,
+        latitude: 34.796491,
+        longitude: 113.665299,
         WhetherBangding: true
     },
 
@@ -34,8 +34,15 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
+        this.setData({
+            markers:[{
+                id: 0,
+                latitude: 34.796491,
+                longitude: 113.665299 }]
+        })
 
     },
+
 
     /**
      * 生命周期函数--监听页面显示

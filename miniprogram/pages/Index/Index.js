@@ -24,11 +24,11 @@ Page({
   onShow: function(){
     setTimeout(function () {
       //要延时执行的代码
-        app.WhetherShuaiDao=true
+        app.globalData.WhetherShuaiDao=true
+
         app.GetNews()
      }, 5000) //延迟时间 这里是1秒
   }
-  
   });
 
 
